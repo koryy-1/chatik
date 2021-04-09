@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>4atik</title>
+</head>
+
+<body>
+    <header>
+        <h1>4at</h1>
+        <span id="status">OFFLINE</span>
+        <br>
+        <div id="buttonForSidebar" class="button-for-sidebar" onclick="displaySidebarForSmartphones()">|||</div>
+    </header>
+    
+    <div class="container">
+        <div id="nickSpace" onclick="displayModalWithNickname()">[change]</div>
+
+        <div class="messages" id="block">
+            <ul id="message"></ul>
+        </div>
+
+        <div id="openModal1" class="modal1">
+            <div class="space">
+                <div class="modal-content">
+                    <form onsubmit="login(event)">
+                        <h2>authorization</h2>
+                        <input type="text" maxlength="10" placeholder="nickname" id="nick1" autocomplete="off">
+                        <input type="password" maxlength="10" placeholder="password" id="paswrd1">
+                        <input type="submit" value="login">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="openModal2" class="modal1">
+            <div class="space">
+                <div class="modal-content">
+                    <form onsubmit="register(event)">
+                        <h2>registration</h2>
+                        <input type="text" maxlength="10" placeholder="nickname" id="nick2" autocomplete="off">
+                        <input type="password" maxlength="10" placeholder="password" id="paswrd2">
+                        <input type="submit" value="register">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="openModal3" class="modal1">
+            <div class="space">
+                <div class="modal-content">
+                    <form onsubmit="changeNickname(event)">
+                        <h2>change nick</h2>
+                        <input type="text" maxlength="10" placeholder="nickname" id="nick" autocomplete="off">
+                        <input type="submit" value="change">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <form id="form">
+            
+            <label for="message">&gt;</label>
+            <input
+                type="text"
+                placeholder="message"
+                id="input"
+                autofocus autocomplete="off"
+                onclick="checkLoginState()"
+            >
+            
+        </form>
+    </div>
+    <div class="modal2" id="sidebarSpace"></div>
+    <div id="sidebar" class="sidebar">
+        <div>
+            <label for="url">backgrnd image url:</label>
+            <input type="text" placeholder="link na oboi" id="oboi" oninput="setBackgroundImage(value)">
+            <!-- <div>last oboi</div> -->
+            <div id="butLog" class="btn" onclick="displayModal()">login</div>
+            <div id="butReg" class="btn" onclick="displayModalReg()">register</div>
+            <div id="butLogout" class="btn-logout" onclick="logout()">logout</div>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+
+</html>

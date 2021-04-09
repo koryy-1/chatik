@@ -1,0 +1,16 @@
+{
+  "name": "server-web-socket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "DiNower",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.6.4",
+    "nodemon": "^2.0.7",
+    "ws": "^7.4.3"
+  }
+}
