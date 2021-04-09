@@ -6,7 +6,7 @@ const MongoClient = require('mongodb').MongoClient
 
 const PORT = process.env.PORT || 80
 
-const uri = 'mongodb+srv://server-db-1337:passforserv@cluster0.gvs68.mongodb.net/dbFor4at?retryWrites=true&w=majority'
+const uri = 'kjdsfhksjdfh'
 
 
 let ONLINE = 0
