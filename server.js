@@ -6,7 +6,7 @@ const MongoClient = require('mongodb').MongoClient
 
 const PORT = process.env.PORT || 80
 
-const uri = 'kjdsfhksjdfh'
+const uri = process.env.CONNECTIONSTRING
 
 
 let ONLINE = 0

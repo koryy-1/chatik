@@ -1,6 +1,15 @@
-# Web socket chat
-this is my first project - client-server application.
+# Просто [чат](https://web-socket-4at.herokuapp.com/)
 
-technology stack that I used in my chat:
-1) web sockets
-2) MongoDB
+### мой первый рабочий проект
+
+## Особенности
+- самописная авторизация, изменение ника
+- изменение фона (нужна прямая ссылка на картинку)
+- протокол передачи данных web-socket
+
+## настройка и запуск
+1) создайте кластер в [MongoDB](https://www.mongodb.com/)
+2) нажмите connect и выберите connect to your application, получите connection string
+3) создайте новое приложение на хероку, в deployment method укажите гитхаб, впишите туда ссылку на этот репозиторий
+4) в настройках приложения создайте переменную окружения CONNECTIONSTRING и впишите туда ваш connection string, что получили из п.2
+5) запустите приложение
